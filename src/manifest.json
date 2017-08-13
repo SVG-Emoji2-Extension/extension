@@ -1,0 +1,34 @@
+﻿{
+	"manifest_version": 2,
+	"name": "SVG Emoji 2 Extension",
+	"version": "3.1",
+	"version_name": "3.1a1.beta",
+	"description": "Emojify the World Wide Web using these free emojies. Change the default emoji on your browser to SVG Emoji2 today!",
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"78": "icon78.png",
+		"100": "icon100.png",
+		"128": "icon128.png",
+		"200": "icon200.png"
+	},
+	"author": "Elijah Porter",
+	"homepage_url": "https://csf30816.github.io/SVG-Emoji2/",
+	"offline_enabled": true,
+	"short_name": "SVG Emoji2",
+	"browser_action": {},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"images.js",
+				"fardt.min.js",
+				"content.js"
+			]
+		}
+  	]
+}
