@@ -1,7 +1,7 @@
 ﻿{
 	"manifest_version": 2,
 	"name": "SVG Emoji 2 Extension",
-	"version": "3.1",
+	"version": "3.2",
 	"version_name": "3.1a1.beta",
 	"description": "Emojify the World Wide Web using these free emojies. Change the default emoji on your browser to SVG Emoji2 today!",
 	"icons": {

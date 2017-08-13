@@ -1,5 +1,6 @@
 ﻿var replace = function(search, replacement) {
 	findAndReplaceDOMText(document.body, {
+		preset:'prose',
 		find: search,
 		replace: function(m) {
 			var el = document.createElement('span');
