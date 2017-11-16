@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Emoji2 Extension</title>
+    <style>
+    body {
+      background-color: #eee;
+      width: 233px;
+      margin: 0 5px 5px;
+    }
+    body div {
+      word-wrap: break-word;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      display: inline-block;
+      padding: 3px 3px 0px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #fff;
+    }
+    button:focus {
+      outline: none;
+    }
+    h3 {
+      margin: 0 5px 10px;
+      color: #333;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    </style>
+    <script src="images.js"></script>
+  </head>
+  <body>
+    <div>
+      <h3>Click to copy!</h3>
+      <button data-copy=":slight_smile:" data-emoji="smile"></button>
+      <button data-copy=":grinning:" data-emoji="smileBig"></button>
+      <button data-copy=":smile:" data-emoji="smileI"></button>
+      <button data-copy=":frowning2:" data-emoji="frown"></button>
+      <button data-copy=":frowning:" data-emoji="frownBig"></button>
+      <button data-copy=":open_mouth:" data-emoji="openMouth"></button>
+      <button data-copy=":no_mouth:" data-emoji="noMouth"></button>
+      <button data-copy=":stuck_out_tongue:" data-emoji="tongue"></button>
+      <button data-copy=":neutral:" data-emoji="neutral"></button>
+      <button data-copy=":raging:" data-emoji="rage"></button>
+      <button data-copy=":angry:" data-emoji="angry"></button>
+      <button data-copy=":wink:" data-emoji="wink"></button>
+      <button data-copy=":grin:" data-emoji="grin"></button>
+      <button data-copy=":laughing:" data-emoji="laughing"></button>
+      <button data-copy=":thumb_up:" data-emoji="thumbUp"></button>
+      <button data-copy=":thumb_down:" data-emoji="thumbDown"></button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

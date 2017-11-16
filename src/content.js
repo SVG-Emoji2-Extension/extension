@@ -6,6 +6,8 @@
 			var el = document.createElement('span');
 			el.style.backgroundSize = '100% 100%';
 			el.style.fontFamily = 'Helvetica, Sans-Serif';
+			el.style.fontSize = '120%';
+			el.style.verticalAlign = 'middle';
 			el.style.lineHeight = '0';
 			el.style.backgroundImage = 'url("data:image/svg+xml;charset=UTF-8, ' + replacement + '")';
 			el.innerHTML = '&nbsp&nbsp&nbsp&nbsp';
@@ -66,10 +68,29 @@ var emojify = function(text) {
 	replace(':angry:', svg.angry);
 	replace('😠', svg.angry);
 
-	// Raging Face
-	replace(';)', svg.angry);
-	replace(':wink:', svg.angry);
-	replace('😉', svg.angry);
+	// Winking Face
+	replace(';)', svg.wink);
+	replace(':wink:', svg.wink);
+	replace('😉', svg.wink);
+
+	// Grinning Face with Smiling Eyes
+	replace(':grin:', svg.grin);
+	replace('😁', svg.grin);
+
+	// Laughing Face
+	replace(':laughing:', svg.laughing);
+	replace('xD', svg.laughing);
+	replace('😆', svg.laughing);
+
+	// Thumb's Up
+	replace(':thumb_up:', svg.thumbUp);
+	replace(':thumbs_up:', svg.thumbUp);
+	replace('👍', svg.thumbUp);
+
+	// Thumb's Down
+	replace(':thumb_down:', svg.thumbDown);
+	replace(':thumbs_down:', svg.thumbDown);
+	replace('👎', svg.thumbDown);
 };
 var emojis = -1;
 emojify();
@@ -79,8 +100,13 @@ setInterval(
 			document.body.innerHTML.search(":\\(") +
 			document.body.innerHTML.search(":slight_smile:") +
 			document.body.innerHTML.search("🙂") +
+			document.body.innerHTML.search(":laughing:") +
+			document.body.innerHTML.search("xD") +
+			document.body.innerHTML.search("😆") +
 			document.body.innerHTML.search(":smile:") +
 			document.body.innerHTML.search("😄") +
+			document.body.innerHTML.search(":grin:") +
+			document.body.innerHTML.search("😁") +
 			document.body.innerHTML.search(":grinning:") +
 			document.body.innerHTML.search("😀") +
 			document.body.innerHTML.search(":frowning2:") +
@@ -102,6 +128,12 @@ setInterval(
 			document.body.innerHTML.search("😠") +
 			document.body.innerHTML.search(":wink:") +
 			document.body.innerHTML.search("😉") +
+			document.body.innerHTML.search(":thumb_up:") +
+			document.body.innerHTML.search(":thumbs_up") +
+			document.body.innerHTML.search(":thumb_down:") +
+			document.body.innerHTML.search(":thumbs_down:") +
+			document.body.innerHTML.search("👍") +
+			document.body.innerHTML.search("👎") +
 			document.body.innerHTML.search(";\\)") +
 			document.body.innerHTML.search(":O") +
 			document.body.innerHTML.search(":\\|") +

@@ -1,8 +1,8 @@
 ﻿{
 	"manifest_version": 2,
 	"name": "SVG Emoji 2 Extension",
-	"version": "3.2",
-	"version_name": "3.1a1.beta",
+	"version": "3.6",
+	"version_name": "v3.6b",
 	"description": "Emojify the World Wide Web using these free emojies. Change the default emoji on your browser to SVG Emoji2 today!",
 	"icons": {
 		"16": "icon16.png",
@@ -17,7 +17,9 @@
 	"homepage_url": "https://csf30816.github.io/SVG-Emoji2/",
 	"offline_enabled": true,
 	"short_name": "SVG Emoji2",
-	"browser_action": {},
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
 	"content_scripts": [
 		{
 			"matches": [
